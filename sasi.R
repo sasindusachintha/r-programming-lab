@@ -51,3 +51,20 @@ add_AB
 #substraction
 sub_AB = mat_A-mat_B
 sub_AB
+
+#Devition
+dev_AB = mat_A/mat_B
+mul_AB
+
+#Multiplication
+mul_AB = mat_A*mat_B
+mul_AB
+
+#Data Frames
+a = c(10, 20, 30, 40)
+b = c(1:4)
+c = c('M','I','S','O')
+
+df_MY = data.frame(a,b,c)
+names(df_MY) = c('ID', 'Values', 'Names')
+df_MY
