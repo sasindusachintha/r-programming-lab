@@ -1,5 +1,7 @@
+#Assing value for A
 A <- 20
 
+#print A with value
 A
 
 w = 45
