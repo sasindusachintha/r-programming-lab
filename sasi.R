@@ -10,7 +10,7 @@ e = 67.5
 s = "Amal"
 r = TRUE
 
-
+# print data type of variables
 class(w)
 class(e)
 class(s)
