@@ -4,6 +4,7 @@ A <- 20
 #print A with value
 A
 
+#assign different types of data
 w = 45
 e = 67.5
 s = "Amal"
