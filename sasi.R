@@ -69,6 +69,7 @@ a = c(10, 20, 30, 40)
 b = c(1:4)
 c = c('M','I','S','O')
 
+#print datafarames
 df_MY = data.frame(a,b,c)
 names(df_MY) = c('ID', 'Values', 'Names')
 df_MY
