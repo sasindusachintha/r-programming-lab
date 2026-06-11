@@ -25,6 +25,7 @@ vec_num3 = c(1:9)
 vec_num4 = c(2,2,2)
 vec_num5 = c(2,4,6)
 
+#print vectors
 vec_num1
 vec_num2
 vec_num3
