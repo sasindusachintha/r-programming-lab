@@ -1,4 +1,4 @@
-#Assing value for A
+# Assign a value to variable A
 A <- 20
 
 #print A with value
