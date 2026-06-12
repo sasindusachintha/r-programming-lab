@@ -1,7 +1,7 @@
 # Assign a value to variable A
 A <- 20
 
-#print A with value
+# Print the value of A
 A
 
 #assign different types of data
