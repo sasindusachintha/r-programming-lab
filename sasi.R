@@ -76,6 +76,7 @@ mat_B
 # Matrix Operations
 # -------------------------------
 
+# Matrix addition
 add_AB = mat_A + mat_B   # Matrix addition
 add_AB
 
