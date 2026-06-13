@@ -84,7 +84,8 @@ add_AB
 sub_AB = mat_A - mat_B   
 sub_AB
 
-dev_AB = mat_A / mat_B   # Element-wise division
+# Element-wise division
+dev_AB = mat_A / mat_B  
 dev_AB
 
 mul_AB = mat_A * mat_B   # Element-wise multiplication
