@@ -77,10 +77,11 @@ mat_B
 # -------------------------------
 
 # Matrix addition
-add_AB = mat_A + mat_B   # Matrix addition
+add_AB = mat_A + mat_B   
 add_AB
 
-sub_AB = mat_A - mat_B   # Matrix subtraction
+# Matrix subtraction
+sub_AB = mat_A - mat_B   
 sub_AB
 
 dev_AB = mat_A / mat_B   # Element-wise division
