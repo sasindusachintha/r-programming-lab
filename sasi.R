@@ -122,3 +122,29 @@ pie(x,y, main = "Title of the pie chart ", col = rainbow(4))
 r = round(x/sum(x)*100)
 r
 
+new_label = paste(r, "%")
+new_label
+
+pie(x, new_label, main = "Title of the pie chart", col = rainbow(4))
+
+#Bar charts
+bar= c(25,34,76,90)
+
+barplot(bar)
+
+barplot(bar, main="Title of the bar chart")
+
+barplot(bar, main="Title of the bar chart", col = "#16cE84")
+
+barplot(bar, main="Title of the bar chart", col = "#16cE84",
+        border = "#CE169E", names.arg= c("A", "B","C", "D"),
+        xlab = " Name of the bar chart", ylab = "Y Axix name of the bar chart " )
+
+barplot(bar, main="Title of the bar chart", col = "#16ce84",
+        border = "#CE169E", names.arg= c("A", "B","C", "D"),
+        xlab = " Name of the bar chart", ylab = "Y Axix name of the bar chart ",
+        horiz = TRUE )
+
+
+
+
