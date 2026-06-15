@@ -108,3 +108,17 @@ names(df_MY) = c('ID', 'Values', 'Names')
 
 # Print the data frame
 df_MY
+
+# PIE CHART
+x = c(25, 45, 52 ,90)
+y = c("A","B","c","D")
+
+pie(x, y)
+
+#advance Pie
+pie(x,y, main = "Title of the pie chart ", col = rainbow(4))
+
+#percentage cal
+r = round(x/sum(x)*100)
+r
+
