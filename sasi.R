@@ -222,4 +222,12 @@ summary(result)
 
 #Frequency Distribution and Interval and midpoint
 #1 create class interval 
-breaks <- seq(0, 100, by =10) #creates ex :- 0-10,10-20
+breaks <- seq(0, 100, by =10) #creates ex :- 0-10, 10-20
+ 
+#2 cut marks into Intervals
+Student_data$Interval <- cut(Student_data$Marks, breaks = breaks, right = FALSE)
+
+#3 Frequency table
+freq_table <- table(Student_data$Interval)
+
+freq_table
