@@ -193,4 +193,17 @@ var_marks
 sd_marks <- sd(Student_data$Marks)
 sd_marks
 
+#Box plot
+boxplot(Student_data$Marks, main = "Boxplot of Student Marks",
+        ylab = "Marks",
+        col = "orange",
+        border= "brown",
+        notch = TRUE)
+
+#Add mean line
+abline(h = mean(Student_data$Marks), col = "red", lwd = 2 , lty = 2)
+
+text(x = 1.3, y = mean(Student_data$Marks),
+       labels = paste("Mean = ",round(mean(Student_data$Marks),2)),
+       col = "red")
 
