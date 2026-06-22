@@ -211,3 +211,15 @@ text(x = 1.3, y = mean(Student_data$Marks),
 ##ANOVA TEST
 result <- aov(Marks ~ Gender, data = Student_data)
 summary(result)
+#             Df Sum Sq Mean Sq F value Pr(>F)
+#Gender       1    144   144.1   0.429  0.514
+#Residuals   98  32936   336.1
+#if Pr(>F) < 0.05 ==> Statically Significant
+  #the average marks between Males and Females are Significantly different.
+
+#if Pr(>5) >= 0.05 ==> Not Statically Significant
+  #there is no strong evidence to say marks are different based on gender.
+
+#Frequency Distribution and Interval and midpoint
+#1 create class interval 
+breaks <- seq(0, 100, by =10) #creates ex :- 0-10,10-20
