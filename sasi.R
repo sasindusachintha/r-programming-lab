@@ -207,3 +207,7 @@ text(x = 1.3, y = mean(Student_data$Marks),
        labels = paste("Mean = ",round(mean(Student_data$Marks),2)),
        col = "red")
 
+
+##ANOVA TEST
+result <- aov(Marks ~ Gender, data = Student_data)
+summary(result)
