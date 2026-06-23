@@ -266,4 +266,40 @@ plot(midpoints, freq_values, type = "o",
      col = "blue",
      pch = 16)
    
+#Bell Curve
+#1 Load data
+getwd()
+
+Student_data = read.csv('stu.csv', header = TRUE, sep = ",")
+Student_data
+
+#2 Calculate mean and Standard deviation 
+#mean
+
+mean_marks <- mean(Student_data$Marks)
+mean_marks
+
+#SD
+
+sd_marks <- sd(Student_data$Marks)
+sd_marks
      
+# 3) create a sequence of X values
+x_values <- seq(min(Student_data$Marks), max(Student_data$Marks), lenght = 10)
+
+# calculate the normal distribution Y values using dnorm()
+y_values <- dnorm(x_values, mean = mean_marks, sd = sd_marks)
+
+# 4) plot
+plot(x_values, y_values, type = "l", col = "blue", lwd = 2,
+     main = "Bell curve of student marks",
+     xlab = "Marks", ylab = "Density")
+
+# With Package
+install.packages("ggplot2")
+library(ggplot2)
+
+#Mean Standard Deviation
+mean_marks <- mean()
+
+
