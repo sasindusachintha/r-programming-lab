@@ -253,4 +253,17 @@ barplot(freq_table,
 
 #Frequency Polygon (Midpoint & Lines)
 #Midpoints
-midpoint <- (head(breaks, -1) + tail(breaks, -1))/2
+midpoints <- (head(breaks, -1) + tail(breaks, -1))/2
+
+#convert frequency table to numaric vectors
+freq_values <- as.numeric(freq_table)
+
+#plot frequency polygen
+plot(midpoints, freq_values, type = "o",
+     main = "Frequency Polygon",
+     xlab = "Midpoint of Marks Range",
+     ylab="Numeric of Students",
+     col = "blue",
+     pch = 16)
+   
+     
