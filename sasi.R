@@ -207,6 +207,11 @@ text(x = 1.3, y = mean(Student_data$Marks),
        labels = paste("Mean = ",round(mean(Student_data$Marks),2)),
        col = "red")
 
+#get dataset
+getwd()
+
+Student_data =read.csv("stu.csv", header = TRUE, sep = ",")
+Student_data
 
 ##ANOVA TEST
 result <- aov(Marks ~ Gender, data = Student_data)
@@ -231,3 +236,21 @@ Student_data$Interval <- cut(Student_data$Marks, breaks = breaks, right = FALSE)
 freq_table <- table(Student_data$Interval)
 
 freq_table
+
+#Midpoint
+midpoint <- (head(breaks, -1) + tail(breaks, -1)) /2
+midpoint
+
+#Create Histogram
+
+barplot(freq_table,
+        main = "Histogram of Marks",
+        xlab = "Marks Range",
+        ylab = "Number of Student",
+        col = "lightblue",
+        border = "black"
+        )
+
+#Frequency Polygon (Midpoint & Lines)
+#Midpoints
+midpoint <- (head(breaks, -1) + tail(breaks, -1))/2
