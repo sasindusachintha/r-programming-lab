@@ -311,4 +311,39 @@ ggplot(Student_data, aes(x = Marks)) +
                 color = "red", size = 1.2) +
   labs(title = "Bell Curve of Student Marks", x = "Marks", y = "Density")
 
+##Hypothesis testing
+# Perform a statistical hypothesis test to determine whether there 
+# is a significant difference in the average marks obtained by 
+# male and female students
+# Provide both numerical and graphical outputs.
+# clearly state the null and alternative hypothesis.
+# Discuss the practical significance of your findings for 
+#academic decision-making (e.g., gender-based performance support programs).
+Student_data = read.csv('stu.csv', header = TRUE, sep = ",")
+Student_data
 
+# view Gender Breakdown
+table(Student_data$Gender)
+
+# Check means
+aggregate(Marks ~ Gender, data = Student_data, mean)
+
+#Visual comparison          
+boxplot(Marks ~ Gender, data = Student_data, col = c("lightblue", "lightgreen"),
+          main = "comparison of Marks by Gender",
+          xlab = "Gender", ylab = "Marks")
+
+# Perform two-sample t-test (independent sample)
+t_test <- t.test(Marks ~ Gender , data = Student_data, var_equal = FALSE)
+
+#output
+print(t_test)
+
+#Interpretation
+if(t.test$p.value < 0.05){
+  cat("Reject H : There is a statistically significant
+      differnce  in average marks between marks between male and female students.\n")
+}else {
+  cat("Do not reject H: No significant differnce in marks 
+      between male and female students.\n")
+}
