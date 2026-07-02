@@ -380,3 +380,17 @@ hist(Student_data$Marks,
      xlab = "Marks",
      col = "lightblue",
      border = "black")
+
+#Histogram  bell shaped  => Likely norml 
+
+#3) QQ plot for normality check
+qqnorm(Student_data$Marks,
+       main = "Q-Q plot of Marks")
+qqline(Student_data$Marks,
+       col = "red",
+       lwd = 2)  
+
+#pointer on the straight line = likely normal
+
+#Summary statics for Age and Marks
+summary(Student_data[,c("Age", "Marks")])
