@@ -347,3 +347,7 @@ if(t.test$p.value < 0.05){
   cat("Do not reject H: No significant differnce in marks 
       between male and female students.\n")
 }
+
+install.packages("modeest")
+library(modeest)
+
