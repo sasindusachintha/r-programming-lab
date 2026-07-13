@@ -394,3 +394,34 @@ qqline(Student_data$Marks,
 
 #Summary statics for Age and Marks
 summary(Student_data[,c("Age", "Marks")])
+
+
+#Linear Regression & Correlation Analysis
+getwd()
+
+Student_data = read.csv('stu.csv', header = TRUE, sep = ",")
+Student_data
+
+#correlation Analysis
+#-1 to +1
+cor(Student_data$Age, Student_data$Marks)
+
+#Covariance Correlation
+#measures how to variable change together
+#if both increase -> positive Covariance
+#if one increases while other decreases -> negative covariance
+#Near 0 No linear pattern
+cov(Student_data$Age, Student_data$Marks)
+
+#calculate statistics
+cov_value <- cov(Student_data$Age, Student_data$Marks)
+pearson_value <- cor(Student_data$Age, Student_data$Marks, method = "pearson")
+spearman_value <- cor(Student_data$Age, Student_data$Marks, method = "spearman")
+
+#create scatter plot with regression line
+plot(Student_data$Age, Student_data$Marks,
+     main = "Age vs Marks with Correlation & Covariance",
+     xlab = "Age",
+     ylab = "Marks",
+     pch = 19,
+     col = "darkblue")
