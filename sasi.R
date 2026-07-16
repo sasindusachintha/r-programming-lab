@@ -439,3 +439,15 @@ legend_text <- paste("Covariance:", round(cov_value, 2),
 #Add text plot
 legend("bottomright",legend = legend_text, bty = "n", cex = 0.9, 
        text.col = "black")
+
+#Linear Regression
+model ~ lm(Marks ~ Age, data= Student_data)
+summary(model)
+
+#Graph
+plot(Student_data$Age, Student_data$Marks,
+     main= "Age vs Marks (Regression Line)",
+     xlab = "Age", ylab = "Marks")
+abline(model, col = "blue", lwd = 2)
+
+
