@@ -467,3 +467,10 @@ plot(marks_ts, main = "Monthly Student Marks", ylab = "Marks")
 decomposed <- decompose(marks_ts)
 plot(decomposed)
 
+# Forecasting
+install.packages("forecast")
+library(forecast)
+model_ets <- ets(marks_ts)
+
+forecast_data <- forecast(model_ets, h = 6)
+plot(forecast_data)
