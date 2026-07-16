@@ -204,8 +204,8 @@ boxplot(Student_data$Marks, main = "Boxplot of Student Marks",
 abline(h = mean(Student_data$Marks), col = "red", lwd = 2 , lty = 2)
 
 text(x = 1.3, y = mean(Student_data$Marks),
-       labels = paste("Mean = ",round(mean(Student_data$Marks),2)),
-       col = "red")
+     labels = paste("Mean = ",round(mean(Student_data$Marks),2)),
+     col = "red")
 
 #get dataset
 getwd()
@@ -220,15 +220,15 @@ summary(result)
 #Gender       1    144   144.1   0.429  0.514
 #Residuals   98  32936   336.1
 #if Pr(>F) < 0.05 ==> Statically Significant
-  #the average marks between Males and Females are Significantly different.
+#the average marks between Males and Females are Significantly different.
 
 #if Pr(>5) >= 0.05 ==> Not Statically Significant
-  #there is no strong evidence to say marks are different based on gender.
+#there is no strong evidence to say marks are different based on gender.
 
 #Frequency Distribution and Interval and midpoint
 #1 create class interval 
 breaks <- seq(0, 100, by =10) #creates ex :- 0-10, 10-20
- 
+
 #2 cut marks into Intervals
 Student_data$Interval <- cut(Student_data$Marks, breaks = breaks, right = FALSE)
 
@@ -249,7 +249,7 @@ barplot(freq_table,
         ylab = "Number of Student",
         col = "lightblue",
         border = "black"
-        )
+)
 
 #Frequency Polygon (Midpoint & Lines)
 #Midpoints
@@ -265,7 +265,7 @@ plot(midpoints, freq_values, type = "o",
      ylab="Numeric of Students",
      col = "blue",
      pch = 16)
-   
+
 #Bell Curve
 #1 Load data
 getwd()
@@ -283,7 +283,7 @@ mean_marks
 
 sd_marks <- sd(Student_data$Marks)
 sd_marks
-     
+
 # 3) create a sequence of X values
 x_values <- seq(min(Student_data$Marks), max(Student_data$Marks), lenght = 10)
 
@@ -330,8 +330,8 @@ aggregate(Marks ~ Gender, data = Student_data, mean)
 
 #Visual comparison          
 boxplot(Marks ~ Gender, data = Student_data, col = c("lightblue", "lightgreen"),
-          main = "comparison of Marks by Gender",
-          xlab = "Gender", ylab = "Marks")
+        main = "comparison of Marks by Gender",
+        xlab = "Gender", ylab = "Marks")
 
 # Perform two-sample t-test (independent sample)
 t_test <- t.test(Marks ~ Gender , data = Student_data, var_equal = FALSE)
@@ -425,3 +425,17 @@ plot(Student_data$Age, Student_data$Marks,
      ylab = "Marks",
      pch = 19,
      col = "darkblue")
+
+
+#Add regression line
+model <- lm(Marks ~ Age, data = Student_data)
+abline(model, col = "red", lwd= 2)
+
+#Add text box with values
+legend_text <- paste("Covariance:", round(cov_value, 2),
+                     "\nPearson:", round(pearson_value, 2),
+                     "\nSpearman:", round(spearman_value, 2))
+
+#Add text plot
+legend("bottomright",legend = legend_text, bty = "n", cex = 0.9, 
+       text.col = "black")
