@@ -450,4 +450,20 @@ plot(Student_data$Age, Student_data$Marks,
      xlab = "Age", ylab = "Marks")
 abline(model, col = "blue", lwd = 2)
 
+par(mar = c(4, 4, 2, 1))  # bottom, left, top, right
+plot(Student_data$Age, Student_data$Marks,
+     main = "Age vs Marks (Regression Line)",
+     xlab = "Age", ylab = "Marks")
+abline(model, col = "blue", lwd = 2)
+
+#Time series Analysis & Forecasting
+# Assume Marks are collected monthly
+marks_ts <- ts(Student_data$Marks[1:24], frequency = 12, start = c(2023,1))
+
+# Plot Time Series
+plot(marks_ts, main = "Monthly Student Marks", ylab = "Marks")
+
+# Decompose time series
+decomposed <- decompose(marks_ts)
+plot(decomposed)
 
