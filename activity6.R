@@ -1,3 +1,4 @@
+#get working directory
 getwd()
 
 vehicle_data=read.csv("auto_Info.csv", header = TRUE, sep = ",")
