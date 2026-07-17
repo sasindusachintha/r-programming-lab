@@ -1,6 +1,7 @@
 #get working directory
 getwd()
 
+#import dataset
 vehicle_data=read.csv("auto_Info.csv", header = TRUE, sep = ",")
 vehicle_data
 
