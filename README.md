@@ -121,7 +121,6 @@ t.test(Marks ~ Gender, data = Student_data)
 ---
 
 ## 🔗 Correlation & Regression
-
 - Pearson Correlation  
 - Spearman Correlation  
 - Covariance  
