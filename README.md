@@ -4,7 +4,6 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
 ---
 
 ## 🚀 Features
-
 - Variable assignment and data types  
 - Vector and matrix operations  
 - Data frame creation and manipulation  
