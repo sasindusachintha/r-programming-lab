@@ -131,7 +131,6 @@ cor(Student_data$Age, Student_data$Marks)
 ---
 
 ## 📉 Normality Testing
-
 - Shapiro-Wilk Test  
 - Histogram  
 - Q-Q Plot  
