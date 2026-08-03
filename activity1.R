@@ -12,7 +12,7 @@ range_marks
 iqr_marks <- IQR(studentp$Final_Exam_Score)
 iqr_marks
 
-#variance and Standard Deviation
+#variance and Standard Deviation for marks
 var_marks <- var(studentp$`Final_Exam_Score`)
 var_marks
 
