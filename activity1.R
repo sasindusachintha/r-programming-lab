@@ -4,7 +4,7 @@ getwd()
 studentp =read.csv("student_performance.csv", header = TRUE, sep = ",")
 studentp
 
-#Calculate Range
+#Calculate Range of marks
 range_marks <- max(studentp$Final_Exam_Score) - min(studentp$Final_Exam_Score)
 range_marks
 
