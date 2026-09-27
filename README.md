@@ -7,7 +7,7 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
 - Variable assignment and data types
 - Vector and matrix operations.  
 - Data frame creation and manipulation.
-- Data visualization (Pie charts, Bar charts, Histogram, Boxplot)  
+- Data visualization (Pie charts, Bar charts, Histogram, Boxplot).  
 - Statistical analysis:
   - Mean, Median, Mode  
   - Variance & Standard Deviation  
