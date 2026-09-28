@@ -10,7 +10,7 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
 - Data visualization (Pie charts, Bar charts, Histogram, Boxplot).  
 - Statistical analysis:
   - Mean, Median, Mode.  
-  - Variance & Standard Deviation  
+  - Variance & Standard Deviation.  
   - Range & Interquartile Range (IQR)  
 - Hypothesis testing:
   - t-test  
