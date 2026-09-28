@@ -11,7 +11,7 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
 - Statistical analysis:
   - Mean, Median, Mode.  
   - Variance & Standard Deviation.  
-  - Range & Interquartile Range (IQR)  
+  - Range & Interquartile Range (IQR).  
 - Hypothesis testing:
   - t-test  
   - ANOVA  
