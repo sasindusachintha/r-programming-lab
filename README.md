@@ -15,7 +15,7 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
 - Hypothesis testing:
   - t-test. 
   - ANOVA.  
-- Correlation & Covariance analysis  
+- Correlation & Covariance analysis.  
 - Normality testing:
   - Shapiro-Wilk Test  
   - Histogram & Q-Q Plot  
