@@ -13,7 +13,7 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
   - Variance & Standard Deviation.  
   - Range & Interquartile Range (IQR).  
 - Hypothesis testing:
-  - t-test  
+  - t-test. 
   - ANOVA  
 - Correlation & Covariance analysis  
 - Normality testing:
