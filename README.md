@@ -14,7 +14,7 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
   - Range & Interquartile Range (IQR).  
 - Hypothesis testing:
   - t-test. 
-  - ANOVA  
+  - ANOVA.  
 - Correlation & Covariance analysis  
 - Normality testing:
   - Shapiro-Wilk Test  
