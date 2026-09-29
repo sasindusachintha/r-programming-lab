@@ -17,7 +17,7 @@ This project demonstrates fundamental to advanced concepts in **R programming**,
   - ANOVA.  
 - Correlation & Covariance analysis.  
 - Normality testing:
-  - Shapiro-Wilk Test  
+  - Shapiro-Wilk Test.  
   - Histogram & Q-Q Plot  
 - Regression and relationship analysis  
 - Frequency distribution & class intervals  
