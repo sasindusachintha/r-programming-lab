@@ -69,7 +69,7 @@ df_MY = data.frame(a, b, c)
 ## 📊 Data Visualization
 - Pie Charts.  
 - Bar Charts . 
-- Histograms  
+- Histograms.  
 - Boxplots  
 - Frequency Polygons  
 - Bell Curve (Normal Distribution)  
