@@ -67,7 +67,7 @@ df_MY = data.frame(a, b, c)
 ---
 
 ## 📊 Data Visualization
-- Pie Charts  
+- Pie Charts.  
 - Bar Charts  
 - Histograms  
 - Boxplots  
